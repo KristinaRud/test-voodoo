@@ -1,0 +1,15 @@
+
+.section-options {
+    background: #fbf0f4;
+    height: 100vh;
+    max-height: 862px;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.d-grid{
+    display: grid;
+}
