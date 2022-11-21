@@ -5,19 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
     <section class="section-options">
         <div class="container">
-            <div class="content-wrapper">
+            <div class="contact-container d-grid">
+                <!--Form-->
                 <div class="form-container">
-                    <h2>Contact Us</h2>
-                    <form action="" class="contact-form">
+                    <h3>Contact Us</h3>
+                    <p>The Voodoo team is looking forward to hearing from you!</p>
+                    <form action="" class="contact-form d-grid">
                         <input type="text" placeholder="Full Name*"/>
                         <input type="text" placeholder="Title/Position*"/>
-                        <select name="select" required>
+                        <select name="select" title="sel" required>
                             <option value="" disabled selected hidden>Practice/Institution*</option>
                             <option value="value2">Значение 1</option>
                             <option value="value3">Значение 2</option>
@@ -25,11 +28,20 @@
                         <input type="text" placeholder="Email Address*"/>
                         <input type="text" placeholder="Phone Number*"/>
                         <input type="text" placeholder="Full Name*"/>
+                        <input class="item7" type="text" placeholder="Type of Inquiry*"/>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Write..."></textarea>
+                        <button id="submit" type="submit">Send Message</button>
                     </form>
                 </div>
-                <div>
-
-                </div>
+                <!--Map-->
+                <div class="contact-map">
+                    <div id="map">
+                        <script
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp4mypNUkiisiumY6NRcEiE0nOY9EuOO0&callback=initMap&v=weekly"
+                            defer
+                            ></script>
+                    </div>
+                </div>                
             </div>
         
         </div>

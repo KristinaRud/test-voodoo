@@ -1,15 +1,139 @@
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('/fonts/AvenirNextLTPro-Bold.otf');
+} 
 
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/* body{
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 28px;
+    color: #1A1A1A;
+    
+} */
+
+/* .font-inter{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+} */
 .section-options {
-    background: #fbf0f4;
+    background: #FFFFFF;
     height: 100vh;
     max-height: 862px;
 }
 
 .container {
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
-.d-grid{
-    display: grid;
+.contact-container{
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    grid-template-columns: auto auto;
+    gap: 32px;
+    margin-top: 138px;
 }
+
+.d-grid{
+    display: grid; 
+}
+
+.contact-form{
+    justify-content: start;
+    gap: 32px;
+    margin-top: 35px;
+}
+
+textarea{
+    grid-column: 1 / span 2;
+    grid-row: 5;
+}
+
+.item7{
+    grid-column: 1 / span 2;
+    grid-row: 4;
+}
+
+button{
+    visibility: hidden;
+    /* grid-column: 1 / span 2;
+    grid-row: 6; */
+}
+
+#submit{
+    visibility: visible !important;
+    width: 221.22px;
+    height: 57px;
+    background-color: #1A1A1A !important;
+    color: #FFFFFF;
+
+    /* font-family: 'Inter'; */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.gmnoprint{
+    visibility: hidden;
+}
+
+input{
+    width: 280px;
+    height: 64px;
+}
+
+select{
+    width: 300px;
+    height: 64px;
+}
+
+h3{
+    font-family: "Avenir Next";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #1A1A1A;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+form > *{
+    padding-left: 19px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 16px 32px rgba(202, 203, 210, 0.25);
+    border-radius: 8px;
+    border: none;
+}
+
+form > *::placeholder{
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 28px;
+    color: #1A1A1A;
+    opacity: 0.5;
+}
+
+.contact-map{
+    margin-top: 19px;
+}
+
+#map{
+    width: 470px;
+    height: 936px;
+    
+}
+
+p{
+    margin-top: 13px;
+}
+
